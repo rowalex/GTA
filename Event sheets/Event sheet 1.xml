@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="manu" sid="7447580224058317" static="0" type="number">0</variable>
+        <variable constant="0" name="TANK" sid="3065982364417232" static="0" type="number">0</variable>
+        <variable constant="0" name="car" sid="8076245267336473" static="0" type="number">0</variable>
+        <event-block sid="2555241748364887">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6772032621962617" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="7572248737533992" type="Sprite3">
+                    <param id="0" name="Object">Sprite</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="4435583943435259" type="Sprite7">
+                    <param id="0" name="Object">Sprite5</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="8356393311873532" type="Sprite8">
+                    <param id="0" name="Object">Sprite5</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6935579434445017">
+            <conditions>
+                <condition id="2" name="Key is down" sid="5469466555136682" type="Keyboard">
+                    <param id="0" name="Key">70 (F)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="2882410204137918" type="Sprite2">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="2181931453881949" type="System">
+                    <param id="0" name="Variable">car</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3606492539306026">
+            <conditions>
+                <condition id="2" name="Key is down" sid="7725164766890272" type="Keyboard">
+                    <param id="0" name="Key">70 (F)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="197891936489485" type="Sprite2">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="6261733922636271" type="System">
+                    <param id="0" name="Variable">TANK</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="701313361983698">
+            <conditions>
+                <condition id="2" name="Key is down" sid="7199567244064507" type="Keyboard">
+                    <param id="0" name="Key">71 (G)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="3284554244209406" type="Sprite2">
+                    <param id="0" name="Object">Sprite9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4812043977089419" type="System">
+                    <param id="0" name="Variable">TANK</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7195195910005473">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9503270918635968" type="Keyboard">
+                    <param id="0" name="Key">71 (G)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="8196499305353412" type="Sprite2">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="7122741009488227" type="System">
+                    <param id="0" name="Variable">car</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2737048495528429">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5804863936653859" type="System">
+                    <param id="0" name="Variable">car</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="6065685018691277" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="4820192846657476" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="9766044339778013" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="3502662491240782" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7527096088041311">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="434931862181974" type="System">
+                    <param id="0" name="Variable">TANK</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="7770488500628024" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="447060139055965" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="894378555236904" type="Sprite5">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1151965308465134" type="Sprite5">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3646035785204576">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5677365031598213" type="System">
+                    <param id="0" name="Variable">car</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="4479057590663538" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="9425340217988223" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="1652267238008126" type="Sprite2">
+                    <param id="0" name="X">-860</param>
+                    <param id="1" name="Y">-322</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="5745046256506525" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="8974209543734584" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6477945601569307">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2501909695604866" type="System">
+                    <param id="0" name="Variable">TANK</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="769315627560781" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="8291153844570308" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="1888650826892427" type="Sprite2">
+                    <param id="0" name="X">-860</param>
+                    <param id="1" name="Y">267</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="9780974148984385" type="Sprite5">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="2799801026915878" type="Sprite5">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="2925630050342193" type="Sprite7">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1600914224861182">
+                    <conditions>
+                        <condition id="0" name="On click" sid="4458531101316645" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="6385156292682182" type="Sprite7">
+                            <param id="0" name="Object">Sprite10</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6489962971568702">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3095666892740817" type="System">
+                    <param id="0" name="Variable">car</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="4506061896693709" type="Sprite2">
+                    <param id="0" name="Object">Sprite</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="765715213126834" type="System">
+                    <param id="0" name="Variable">car</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2394559697769735">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9475871413958295" type="System">
+                    <param id="0" name="Variable">TANK</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="6138960100789336" type="Sprite2">
+                    <param id="0" name="Object">Sprite5</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5179225193533951" type="System">
+                    <param id="0" name="Variable">TANK</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6124730049688722">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4112021080548479" type="Sprite10">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1304388586589109" type="Sprite10" />
+            </actions>
+        </event-block>
+        <event-block sid="4135701569151061">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1346052211923433" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="8031858417387527" type="System">
+                    <param id="0" name="Variable">manu</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9993922323012156">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6768470853621883" type="System">
+                    <param id="0" name="Variable">manu</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1837596214940713" type="Sprite11">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="123638730220696" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="6265051859757412" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="6048395537622886" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="9479866668868474" type="Sprite12">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1557421221061295" type="Text">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2251414487036965" type="Sprite12">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="3111024590923454" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="956277468867045" type="Sprite5">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3457605989927641">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2712157252409122" type="System">
+                    <param id="0" name="Variable">manu</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="2404143820658723" type="Sprite11">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="3198278026513772" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="443975077105381" type="Sprite12">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="569290604132745" type="Text">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1148250071729984" type="Sprite12">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2679815217959" type="System">
+                    <param id="0" name="Variable">manu</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
